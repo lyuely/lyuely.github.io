@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>顺峰征信公司_征信修复技术_征信洗白_信用修复_征信修复加盟代理</title>
+  <meta name="keywords" content="顺峰征信修复官网_征信洗白_征信修复公司_个人征信申诉_网贷信用卡逾期修复处理_征信修复公司加盟代理_征信修复技术" />
+  <meta name="description" content="顺峰征信修复公司于2018年开始从事征信修复，征信逾期，呆账修复技术转让，征信修复洗白教程，消除信用卡逾期修复处理，一系列征信问题修复" />
+  <script>document.documentElement.style.fontSize = document.documentElement.getBoundingClientRect().width/7.5 + 'px'</script>
+  <link rel="stylesheet" href="css/moblie.css?t=20191016">
+  <script>
+    window._agl = window._agl || [];
+    (function () {
+        _agl.push(
+            ['production', '_f7L2XwGXjyszb4d1e2oxPybgD']
+        );
+        (function () {
+            var agl = document.createElement('script');
+            agl.type ='text/javascript';
+            agl.async = true;
+            agl.src = 'https://fxgate.baidu.com/angelia/fcagl.js?production=_f7L2XwGXjyszb4d1e2oxPybgD';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(agl, s);
+        })();
+    })();
+  </script>
+</head>
+<body>
+  <div class="box">
+    <p><img alt="" src="img/2019101415585660139.jpg" /></p>
+
+<p><img alt="" src="img/1.jpg" /></p>
+
+  </div>
+  <div class="input-box" id="inputbox">
+    <div class="cjhd"><img src="img/jp.jpg" alt="">目前已有<span>692</span>人合作</div>
+</div>
+  <div class="footer">
+    <div class="f1"><img src="img/icon-2.jpg" alt="">联系方式：18102844043</div>
+    <div class="f2">广东·广州</div>
+  </div+>
+  
+  <div class="obottom"><a class="dhzx" href="tel:18102844043"> <em class="icon-phone"></em> <span>电话咨询</span> </a> <a class="ljhuoq" id="ljhuoq" href="javascript:void(0);"> <em class="icon-tx"></em> <span>立即加微信联系</span> </a></div>
+</body>
+</html>
+<script src="js/jquery.min.js"></script>
+<script>
+  $(function() {
+    $('#btn').click(function() {
+      var name = $('#name').val()
+      var tel = $('#tel').val()
+      
+      var site = '广东·广州'
+      if (!name) {
+        alert("姓名不能为空")
+        return
+      }
+      if (!tel) {
+        alert("电话不能为空")
+        return
+      }
+      if (/\D/.test(tel)) {
+        alert("电话格式不正确")
+        return
+      }
+      
+      
+      
+      
+      $.post('/add', {name: name, tel: tel, site: site}, function(data) {
+        if (!data.Success) {
+          alert("申请失败")
+          return
+        }
+        alert("申请成功")
+        $('#name').val("")
+        $('#tel').val("")
+        $('#site').val("")
+      })
+    })
+    
+    var num = 0
+    
+    var len = $('.gundong>li').length
+    
+    var time = setInterval(gfn, 3000)
+
+    function gfn() {
+      $('.gundong>li').eq(num).animate({ top: -$('.gundong>li').eq(num).height() },function() {
+        num++
+        num %= $('.gundong>li').length
+        $.each($('.gundong>li'), function(i, n) {
+          if (i !== num) {
+            $(n).removeClass('active')
+          } else {
+            $(n).css({ top: 50}).addClass('active').animate({ top: 0 })
+          }
+        })
+      })
+    }
+  
+    $('#ljhuoq').click(function() {
+      $(window).scrollTop($('#inputbox').offset().top)
+    })
+  })
+</script>

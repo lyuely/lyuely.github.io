@@ -1,0 +1,149 @@
+html{font-family:"HelveticaNeue",Helvetica,STHeiTi,Arial,sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-size:62.5%;}body{margin:0;font-size:1.4rem;line-height:1.5;color:#333333;background-color:white;height:100%;overflow-x:hidden;-webkit-overflow-scrolling:touch;}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block;}audio,canvas,progress,video{display:inline-block;vertical-align:baseline;}audio:not([controls]){display:none;height:0;}[hidden],template{display:none;}svg:not(:root){overflow:hidden;}a{background:transparent;text-decoration:none;-webkit-tap-highlight-color:transparent;color:#0088cc;}a:active{outline:0;}a:active{color:#006699;}abbr[title]{border-bottom:1pxdotted;}b,strong{font-weight:bold;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-0.5em;}sub{bottom:-0.25em;}img{border:0;vertical-align:middle;}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0;}pre{overflow:auto;white-space:pre;white-space:pre-wrap;word-wrap:break-word;}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em;}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0;}button{overflow:visible;}button,select{text-transform:none;}button,htmlinput[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;}button[disabled],htmlinput[disabled]{cursor:default;}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}input{line-height:normal;}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto;}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}fieldset{border:1pxsolid#c0c0c0;margin:02px;padding:0.35em0.625em0.75em;}legend{border:0;padding:0;}textarea{overflow:auto;resize:vertical;}optgroup{font-weight:bold;}table{border-collapse:collapse;border-spacing:0;}td,th{padding:0;}html,button,input,select,textarea{font-family:"HelveticaNeue",Helvetica,STHeiTi,Arial,sans-serif;}h1,h2,h3,h4,h5,h6,p,figure,form,blockquote{margin:0;}ul,ol,li,dl,dd{margin:0;padding:0;}ul,ol{list-style:noneoutsidenone;}h1,h2,h3{line-height:2;font-weight:normal;}h1{font-size:1.8rem;}h2{font-size:1.6rem;}h3{font-size:1.4rem;}input::-moz-placeholder,textarea::-moz-placeholder{color:#cccccc;}input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#cccccc;}input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{color:#cccccc;}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+img {
+  vertical-align: middle;
+}
+input {
+outline: none;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+}
+.box img {
+  width: 100%;
+}
+.input-box {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem .7rem;
+  padding-top: .5rem;
+}
+.cjhd, .inb, .gundong {
+  height: .77rem;
+  background: #fff;
+  width: 100%;
+  box-shadow: -.02rem .02rem .05rem rgba(0, 0, 0, .5);
+  margin-bottom: .35rem;
+}
+.cjhd, .gundong {
+  border-radius: .385rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .26rem;
+  letter-spacing: .08rem;
+}
+.cjhd span {
+  color: #f00;
+}
+.cjhd img {
+  position: absolute; width: .36rem; height: .31rem; background: url(/static/img/jp.jpg) no-repeat; background-size: cover;
+  left: .35rem;
+}
+.inb {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: .05rem;
+}
+.inb label {
+  font-size: .26rem; font-weight: 500; color: #666; width: 1.32rem; text-indent: .27rem;
+}
+.inb label span {
+  color: #f00;
+}
+.inb input {
+  flex: 1;
+  border: none; font-size: .26rem;
+}
+.inb button {
+  width: 100%; font-size: .26rem;
+  background: #fe0000; border: none; height: 100%; color: #fff;
+}
+.footer {
+  background: #000; color: #fff; padding-bottom: .2rem;
+}
+.f1 {
+  position: relative; height: .78rem; display: flex; align-items: center; justify-content: center;
+  font-size: .28rem; 
+}
+.f1 img {
+  position: absolute; width: .39rem; height: .38rem; left: 1.42rem;
+}
+.f2 {
+  height: 1rem;
+  display: flex; align-items: center; justify-content: center; font-size: .56rem;
+}
+.gundong {
+  margin-top: .2rem;
+  margin-bottom: 0;
+  overflow: hidden;
+  letter-spacing: .05rem;
+}
+.gundong li {
+  position: absolute;
+  display: flex;
+  font-size: .24rem;
+  color: #000;
+  list-style: none;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0 .4rem;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: opacity .3s;
+  background: #fff;
+}
+.gundong li.active {
+  opacity: 1;
+}
+.gundong li img {
+  width: .31rem;
+  height: .39rem;
+}
+.ico-box {
+  height: .8rem;
+  background: #fff;
+  font-size: .2rem;
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.21rem;
+}
+.ico-box a {
+  color: #000;
+  margin-right: .2rem;
+}
+.obottom {
+  height: 1.21rem; display: flex; position: fixed; bottom: 0; left: 0; right: 0;
+}
+.icon-phone {
+  display: block; background-image: url(/static/img/phone.png); background-repeat: no-repeat;
+  background-position: center; background-size: cover;
+  width: .45rem; height: .45rem;
+}
+a.dhzx {
+  width: 1.85rem; display: flex; flex-direction: column;
+  justify-content: center; align-items: center; color: #565455; background: #fff;
+  font-size: .25rem;
+}
+.dhzx span {
+  display: block; height: .45rem; display: flex; align-items: center; justify-content: center;
+}
+a.ljhuoq {
+  flex: 1; display: flex; justify-content: center; align-items: center;
+  font-size: .32rem; color: #fff; background: #fe0000;
+}
+.icon-tx {
+  width: .37rem; height: .37rem; margin-right: .18rem;
+  display: block; background-image: url(/static/img/tx.png); background-repeat: no-repeat;
+  background-position: center; background-size: cover;
+}
